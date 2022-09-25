@@ -1,0 +1,16 @@
+#config_test.yml
+imports:
+
+...
+
+# Doctrine Configuration
+doctrine:
+  dbal:
+    driver:   pdo_mysql
+    host:     mydb
+    port:     13306
+    dbname:   invitation_system_test
+    user:     root
+    password: pole
+    # Workaround for DBAL 2.5 auto-detect -> with server_version                            allows to doctrine:database:create
+    server_version: 5.6 # your database server version here
